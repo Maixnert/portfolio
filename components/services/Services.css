@@ -1,0 +1,158 @@
+#services {
+  height: 100vh;
+}
+
+.services__container {
+  margin: auto;
+  position: relative;
+  top: 5rem;
+}
+#services p {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.service__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: auto 5rem;
+
+}
+
+.service__head h2 {
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.service__list {
+  padding: 2rem;
+}
+
+.service__list li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.service__list-icon {
+  color: var(--color-bg-variant);
+  margin-top: 2px;
+  font-size: 2rem;
+}
+
+.service__list p {
+  font-size: 0.9rem;
+}
+
+.service__head {
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  height: fit-content;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition);
+  margin-bottom: 3rem;
+}
+
+.service__head:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+.service__card {
+  align-items: center;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition);
+  width: 25vw;
+}
+
+.service__card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.service__card h5 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.service__icon {
+  font-size: 3rem;
+}
+
+.dot__small {
+  font-size: 3rem !important;
+  color: #F43737;
+  line-height: 1;
+}
+
+/*=========== MEDIA QUERIES (MEDIUM DEVICES) ==============*/
+
+@media screen and (max-width: 1280px) {
+  .services__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  #services {
+    position: relative;
+    height: 100vh;
+  }
+
+  .service {
+    height: auto;
+  }
+  .service__card {
+    padding: 0;
+    width: auto;
+  }
+  .service__cards {
+    grid-template-columns: 1fr 1fr;
+    margin: auto 1rem;
+  }
+
+  .service__card h5 {
+    font-size: 1.5rem;
+  }
+
+  .services__container {
+    top: 5%;
+  }
+
+  #services p {
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+
+  #services {
+    height: auto;
+  }
+}
+
+/*=========== MEDIA QUERIES (SMALL DEVICES) ==============*/
+
+@media screen and (max-width: 600px) {
+  .services__container {
+    grid-template-columns: 1fr;
+  }
+  .service__cards {
+    grid-template-columns: 1fr;
+    font-size: 1rem;
+  }
+
+  #services p {
+    width: 80%;
+  }
+
+  #services {
+    height: auto;
+  }
+}
